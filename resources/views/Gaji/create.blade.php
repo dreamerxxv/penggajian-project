@@ -8,11 +8,18 @@
 
 <div class="col-12 ps-4">
     <div class="col12 bg-light p-2 rounded-3 shadow-sm">
-        <form action="" method="post">
+        <form action="/gaji/store" method="post">
             @csrf
 
             <div class="mb-3 row">
-                <label for="" class="col-cm-2 col-form-label">Bulan</label>
+                <label for="" class="col-cm-2 col-form-label">ID Karyawan</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="id_karyawan">
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <label for="" class="col-cm-2 col-form-label" name="bulan">Bulan</label>
                 <div class="col-sm-10">
                     <select class="form-control">
                         <option>Januari</option>
@@ -32,7 +39,7 @@
             </div>
 
             <div class="mb-3 row">
-                <label for="" class="col-cm-2 col-form-label">Karyawan</label>
+                <label for="" class="col-cm-2 col-form-label" name="karyawan">Karyawan</label>
                 <div class="col-sm-10">
                     <select class="form-control">
                         <option>Staff IT</option>
@@ -46,27 +53,27 @@
             <div class="mb-3 row">
                 <label for="" class="col-cm-2 col-form-label">Total Tunjangan</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" name="">
+                    <input type="text" class="form-control" name="total_tunjangan">
                 </div>
             </div>
 
             <div class="mb-3 row">
                 <label for="" class="col-cm-2 col-form-label">Gaji Kotor</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" name="">
+                    <input type="text" class="form-control" name="gaji_kotor">
                 </div>
             </div>
 
             <div class="mb-3 row">
                 <label for="" class="col-cm-2 col-form-label">Gaji Bersih</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" name="">
+                    <input type="text" class="form-control" name="gaji_bersih">
                 </div>
             </div>
 
             <div class="d-grid text-end">
                 <div class="col-sm-12">
-                    <button class="btn btn-primary btn-sm">Create</button>
+                    <button class="btn btn-primary btn-sm" type="submit">Create</button>
                 </div>
             </div>
         </form>

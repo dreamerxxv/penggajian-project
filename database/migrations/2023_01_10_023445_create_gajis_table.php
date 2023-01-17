@@ -16,6 +16,7 @@ class CreateGajisTable extends Migration
         Schema::create('gajis', function (Blueprint $table) {
             $table->id('id_gajis');
             $table->integer('gaji_kotor');
+            $table->string('karyawan');
             $table->integer('jumlah_lembur');
             $table->integer('pajak');
             $table->integer('total_tunjangan');

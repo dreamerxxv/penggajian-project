@@ -5,7 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class gaji extends Model
+class Gaji extends Model
 {
     use HasFactory;
+
+    protected $table = 'gajis';
+    protected $guarded = ['id'];
 }
